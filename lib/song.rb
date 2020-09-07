@@ -13,7 +13,7 @@ class Song
   end
 
   def self.create
-
+    self.save
   end
 
 
@@ -21,4 +21,3 @@ class Song
 
 end
 
-binding.pry

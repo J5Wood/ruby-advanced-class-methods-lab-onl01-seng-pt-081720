@@ -40,6 +40,8 @@ class Song
       self.all.map do |x|
         if x.name == name
           x
+        end
+      end
       binding.pry
 
     else

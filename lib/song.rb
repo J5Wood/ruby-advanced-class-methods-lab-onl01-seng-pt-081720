@@ -39,7 +39,7 @@ class Song
     if self.find_by_name(name)
       self.all.map do |x|
         if x.name == name
-          x
+          x.to_a
         end
       end
 

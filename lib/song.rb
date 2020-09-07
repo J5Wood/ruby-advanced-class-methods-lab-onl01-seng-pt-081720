@@ -42,7 +42,6 @@ class Song
           x
         end
       end
-      binding.pry
 
     else
       self.create_by_name(name)

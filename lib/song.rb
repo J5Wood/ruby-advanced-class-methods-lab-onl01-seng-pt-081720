@@ -40,6 +40,7 @@ class Song
       self.all.collect do |song|
         if song == name
           song
+          binding.pry
         end
       end
 

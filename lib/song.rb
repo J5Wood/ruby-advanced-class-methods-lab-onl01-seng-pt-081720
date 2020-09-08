@@ -50,6 +50,7 @@ class Song
   end
 
 
-  def destroy_all
-    slef.all.clear
+  def self.destroy_all
+    self.all.clear
+  end
 end

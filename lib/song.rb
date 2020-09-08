@@ -53,9 +53,9 @@ class Song
     song = name.split("-")
 
     binding.pry
-    
+
   end
-  
+
 
   def self.destroy_all
     self.all.clear

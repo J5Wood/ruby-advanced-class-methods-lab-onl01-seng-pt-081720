@@ -60,7 +60,7 @@ class Song
     song
       binding.pry
     end
-    info
+    
   end
 
 

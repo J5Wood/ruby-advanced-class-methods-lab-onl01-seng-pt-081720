@@ -49,5 +49,7 @@ class Song
     binding.pry
   end
 
+
+  def destroy_all
+    slef.all.clear
 end
-binding.pry

@@ -51,14 +51,13 @@ class Song
 
   def self.new_from_filename(name)
     data = name.split(" - ")
-    info = data.collect do |x|
-      artist_name = x[0]
-      song_name = x[1]
-      song_name = song_name.delete".mp3"
-      song = self.new
-      song.name = song_name
-      song.artist_name = artist_name
-      song
+    artist_name = data[0]
+    song_name = data[1]
+    song_name = song_name.delete".mp3"
+    song = self.new
+    song.name = song_name
+    song.artist_name = artist_name
+    song
       binding.pry
     end
     info

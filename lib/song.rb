@@ -37,12 +37,7 @@ class Song
 
   def self.find_or_create_by_name(name)
     if self.find_by_name(name)
-      self.all.map do |x|
-        if x.name == name
-          x.name
-          binding.pry
-        end
-      end
+      binding.pry
 
     else
       self.create_by_name(name)
